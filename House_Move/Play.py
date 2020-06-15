@@ -38,7 +38,7 @@ def drawboard(root,canvas,board,startx=50,starty=50,cellwidth=20):
             if 0 <= x < board.shape[0] and 0 <= y < board.shape[1]:
                 if board[x,y] == flag:
                     tmp_point = (x,y)
-        time.sleep(0.3)
+        time.sleep(0.01)
 def play_move(board):
     root=Tk()
     canvas=Canvas(root,bg="white")
